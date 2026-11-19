@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-PSQL="psql -X -U freecodecamp -d guessing_game -A -t -c"
+PSQL="psql -X -U freecodecamp -d number_guess -A -t -c"
 SECRET_NUMBER=$(( $RANDOM % 1000 +1 )) # 1- 1000 range
 echo -e "Enter your username:\n"
 read USER_NAME
