@@ -1,6 +1,6 @@
 #!/bin/bash
 PSQL="psql -X -U freecodecamp -d number_guess -A -t -c"
-SECRET_NUMBER=$(( $RANDOM % 10 +1 )) # 1 - 1000 range
+SECRET_NUMBER=$(( $RANDOM % 1000 +1 )) # 1 - 1000 range
 echo -e "Enter your username:\n"
 read USER_NAME
 USER_NAME_RESULT=$($PSQL "SELECT user_name FROM users WHERE user_name='$USER_NAME'")
